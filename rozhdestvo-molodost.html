@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+  <title>Рождество - Молодость</title>
+
+  <meta name="description" content="группа Рождество - Молодость">
+  <meta property="og:url" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Рождество - Молодость">
+  <meta property="og:description" content="группа Рождество - Молодость">
+  <meta property="og:image" content="https://kuda-kazan.ru/uploads/74794cd95796e1d0cd8936677b8cb988.jpg">
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #333;
+  color: #fff;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+.wrapper {
+  display: block;
+  position: relative;
+  max-width: 60rem;
+  margin: 0 auto;
+  border: 1px solid #bbb6;
+  border-radius: .8rem;
+  background: #222;
+}
+h1 {
+  font-size: clamp(2rem, 1.1vw + 1.7rem, 3rem);
+  line-height: 1.2;
+  margin-top: 1rem;
+  text-align: center;
+  color: #ff914d;
+}
+.desc {
+  display: block;
+  max-width: 300px;
+  margin: auto;
+  font-size: 1.3rem;
+  text-align: center;
+}
+.frame {
+  border: 1px solid #bbb6;
+  border-radius: .5rem;
+  margin-block: 1rem;
+  padding: .5rem 1rem;
+  background: #052c65;
+}
+.image-container {
+  margin: .5rem;
+}
+.image {
+  display: block;
+  margin: auto;
+
+}
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+  object-fit: contain;
+  object-position: top center;
+}
+
+/* -------Player------- */
+#player-container {
+  display: block;
+  margin: .5rem auto;
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  height: 80px;
+  background: transparent;
+  color: #fff;
+  border: none;
+}
+
+div#thumb {
+  background-image: url("https://avatars.yandex.net/get-music-user-playlist/70586/306380179.1015.54029/m1000x1000?1543728490875&webp=false");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+}
+
+/* Play / Pause */
+
+#player-container #play-pause {
+  cursor: pointer;
+  text-indent: -999999px;
+  width: 80px;
+  height: 80px;
+  position: relative;
+  float: left;
+  z-index: 2;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMiAyNHYtMjRsMjAgMTItMjAgMTJ6Ii8+PC9zdmc+);
+  background-repeat: no-repeat !important;
+  background-position: center;
+  background-size: 16px;
+  background-size: 20px;
+  background-color: transparent;
+  filter: invert(1);
+}
+
+.play {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMiAyNHYtMjRsMjAgMTItMjAgMTJ6Ii8+PC9zdmc+);
+}
+
+.pause {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTAgMjRoLTZ2LTI0aDZ2MjR6bTEwLTI0aC02djI0aDZ2LTI0eiIvPjwvc3ZnPg==) !important;
+}
+
+/* Timeline */
+
+#timeline {
+  width: 100%;
+  height: 8px;
+  background: #222;
+  float: left;
+  z-index: 9;
+  position: absolute;
+}
+
+#scrub {
+  height: 5px;
+  background-color: #b8a07e;
+  border: none;
+  color: hsl(44, 100%, 44%);
+  float: left;
+}
+
+#playhead {
+  width: 5px;
+  height: 5px;
+  background: #f0d9d6;
+}
+
+/* Time */
+.item-inner {
+  display: block;
+  float: left;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 9px;
+  align-self: stretch;
+}
+
+#time-holder {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+div#is-right,
+div#is-left {
+  display: inline;
+  bottom: auto;
+  padding: 3px 7px;
+  padding-left: 0;
+}
+
+/* Title */
+.item-inner .item-title {
+  flex: 0 1 auto;
+  flex-shrink: 1;
+  min-width: 0;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.item-inner .item-subtitle {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+}
+</style>
+</head>
+
+<body>
+<div class="wrapper">
+<h1>Рождество</h1>
+<div class="desc frame">
+<p>Разбросало нас по жизни,</br>
+И у нас свои дела.</br>
+Разметало словно листья,</br>
+И летим мы кто куда.</br>
+Мы не видимся годами,</br>
+А кого то вовсе нет.</br>
+И только память временами,</br>
+В небе пишет нам привет.</p>
+</div>
+
+  <audio id="track">
+  <source src="" type="audio/mpeg" />
+  </audio>
+
+<div id="player-container">
+
+  <!-- Progress -->
+  <div id="timeline">
+    <div id="scrub"></div>
+    <div id="playhead"></div>
+  </div>
+
+  <!-- Play button -->
+  <div id="play-pause" class="play" data-audio="https://moosic.my.mail.ru/file/b12c14965cbbd193f8f20826df56771a.mp3">Play
+  </div>
+
+  <!-- Artist Thumb-->
+  <div id="thumb"></div>
+
+  <div class="item-inner">
+    <!-- Title-->
+    <div class="item-title">Молодость</div>
+    <div class="item-subtitle">Рождество</div>
+
+    <!-- Time -->
+    <div id="time-bar">
+      <div id="time-holder">
+        <div id="is-left">
+          <span id="current-time">
+            00:00
+          </span>
+        </div>
+        <div id="is-right">
+          <span id="duration-time">
+            <span class="duration-minutes" data-duration-minutes="true">0</span>:<span class="duration-minutes" data-duration-seconds="true">00</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="image-container">
+<img class="image" src="https://kuda-kazan.ru/uploads/74794cd95796e1d0cd8936677b8cb988.jpg" alt="группа Рождество">
+</div>
+
+      <script>
+document.addEventListener("DOMContentLoaded", event => {
+  const controlBtn = document.getElementById("play-pause");
+  let track = document.getElementById("track"),
+  duration = track.duration, // Duration of audio clip (NaN here as the track is not loaded)
+  playhead = document.getElementById("playhead"), // playhead
+  timeline = document.getElementById("timeline"), // timeline
+  timelineWidth = timeline.offsetWidth - playhead.offsetWidth,
+  source = controlBtn.getAttribute("data-audio"),
+  leftTimer = document.getElementById("is-left"),
+  rightTimer = document.getElementById("is-right"),
+  repeatButton = document.getElementsByClassName("icon-repeat");
+
+  if (!track) return;
+
+  // Update the track duration when the track is loaded.
+  track.addEventListener(
+  "canplaythrough",
+  function () {
+    duration = track.duration;
+  },
+  false);
+
+
+  function playPause() {
+    null === track.getAttribute("src") ? track.setAttribute("src", source) : "";
+
+    if (track.paused) {
+      track.play();
+      controlBtn.className = "pause";
+    } else {
+      track.pause();
+      controlBtn.className = "play";
+    }
+  }
+
+  controlBtn.addEventListener("click", playPause);
+
+  track.addEventListener("ended", function () {
+    controlBtn.className = "play";
+    track.currentTime = 0; // reset the playhead
+
+    // Let's check if the repeat button is on, then play the track again.
+    let repeatAudio = repeatButton[0].getAttribute("repeat");
+    if (repeatAudio > 0) {
+      controlBtn.className = "";
+      controlBtn.className = "pause";
+      track.play();
+    }
+
+    // Go to the next playlist
+    let activeListItem = document.querySelector(".playlist-container .active");
+    if (activeListItem) {
+      let nextItem = activeListItem.nextElementSibling;
+      if (repeatAudio != 1 && null !== nextItem) {
+        nextItem.click();
+      }
+    }
+  });
+
+  // timeupdate event listener
+  track.addEventListener("timeupdate", timeUpdate, false);
+
+  // makes timeline clickable
+  timeline.addEventListener(
+  "click",
+  function (event) {
+    moveplayhead(event);
+    track.currentTime = duration * clickPercent(event);
+  },
+  false);
+
+
+  // Moves playhead as user clicks
+  function moveplayhead(event) {
+    let newMargLeft = event.clientX - getPosition(timeline);
+
+    if (newMargLeft >= 0 && newMargLeft <= timelineWidth) {
+      playhead.style.marginLeft = newMargLeft + "px";
+    }
+    if (newMargLeft < 0) {
+      playhead.style.marginLeft = "0px";
+    }
+    if (newMargLeft > timelineWidth) {
+      playhead.style.marginLeft = timelineWidth + "px";
+    }
+  }
+
+  function getPosition(el) {
+    return el.getBoundingClientRect().left;
+  }
+
+  // returns decimal number of the total timelineWidth
+  function clickPercent(event) {
+    return (event.clientX - getPosition(timeline)) / timelineWidth;
+  }
+
+  // Time update
+  function timeUpdate() {
+    let playPercent = timelineWidth * (track.currentTime / duration);
+    playhead.style.marginLeft = playPercent + "px";
+    scrub.style.width = playPercent + "px";
+
+    // Current time
+    document.getElementById("duration-time").innerHTML = formatSecondsAsTime(
+    duration);
+
+    document.getElementById("current-time").innerHTML = formatSecondsAsTime(
+    Math.floor(track.currentTime));
+
+  }
+
+  // Synchronizes playhead position with current point in audio
+  function formatSecondsAsTime(secs, format) {
+    let hr = Math.floor(secs / 3600);
+    let min = Math.floor((secs - hr * 3600) / 60);
+    let sec = Math.floor(secs - hr * 3600 - min * 60);
+
+    if (min < 10) {
+      min = "0" + min;
+    }
+    if (sec < 10) {
+      sec = "0" + sec;
+    }
+
+    return min + ":" + sec;
+  }
+
+  // Repeat
+  repeatButton[0].onclick = function () {
+    repeatButton[0].setAttribute("repeat", 0);
+    repeatButton[0].classList.toggle("icon-repeat-again");
+
+    if (repeatButton[0].classList.contains("icon-repeat-again")) {
+      repeatButton[0].setAttribute("repeat", 1);
+    }
+  };
+
+  // Playlist
+  let playlistContainer = document.querySelector(".playlist-container");
+  let isPlaying = false;
+
+  if (playlistContainer) {
+    let playlistItems = document.querySelectorAll(
+    ".playlist-container li.item");
+
+    playlistItems.forEach(playlist => {
+      playlist.addEventListener("click", function (e) {
+        changePlaylist(playlist);
+      });
+    });
+  }
+
+  function changePlaylist(item) {
+    track.setAttribute("src", "");
+    // Toggle active.
+    document.
+    querySelector(".playlist-container .active").
+    classList.remove("active");
+    item.classList.add("active");
+
+    // Play Audio.
+    source = item.getAttribute("data-play-destination");
+    if (track.getAttribute("src") === "") {
+      track.setAttribute("src", source);
+      track.load();
+      track.play();
+      controlBtn.className = "";
+      controlBtn.className = "pause";
+    }
+
+    // Change audio player tags
+    let artistName = document.getElementsByClassName("item-subtitle");
+    let songName = document.getElementsByClassName("item-title");
+    if (artistName[0] && songName[0]) {
+      songName[0].textContent = item.querySelector(
+      ".playlist-item-title").
+      textContent;
+      artistName[0].textContent = item.querySelector(
+      ".playlist-item-subtitle").
+      textContent;
+    }
+
+    // Change album image tag
+    let AlbumartistName = document.getElementsByClassName("main-item-subtitle");
+    let AlbumsongName = document.getElementsByClassName("main-item-title");
+
+    if (AlbumartistName[0] && AlbumsongName[0]) {
+      AlbumsongName[0].textContent = item.querySelector(
+      ".playlist-item-title").
+      textContent;
+      AlbumartistName[0].textContent = item.querySelector(
+      ".playlist-item-subtitle").
+      textContent;
+    }
+
+    // Change src image.
+    let playerImage = document.getElementById("thumb");
+    if (playerImage) {
+      playerImage.style.backgroundImage = `url(${item.getAttribute(
+      "data-image-small")
+      })`;
+    }
+  }
+});
+    </script>
+
+  
+</body>
+
+</html>
