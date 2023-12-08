@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+<title>Молодость</title>
+
+  <link rel="canonical" href="https://web-lite.github.io/audio-player.html">
+  <meta name="description" content="группа Рождество - Молодость">
+  <meta property="og:url" content="https://web-lite.github.io/audio-player.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Рождество - Молодость">
+  <meta property="og:description" content="группа Рождество - Молодость">
+  <meta property="og:image" content="https://web-lite.github.io/images/rozhdestvo.jpg">
+
+<style>
+*, *::before, *::after {box-sizing: border-box; margin: 0; padding: 0;}
+html {height: 100%; font-family: sans-serif; font-size: 100%; background: #202b38; color: #fff;} a {color: #809fff;}
+body {min-height: 100vh; width: min(100%, 50rem); margin-inline: auto; padding-inline: 1rem; background: #001829;
+font-size: clamp(1.1rem, 1.06rem + 0.2vw, 1.3rem); line-height: 1.5;}
+</style>
+<style>
+.wrapper {
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+}
+.audio-player {
+  padding: 1rem;
+  flex-wrap: nowrap;
+  background: #112e41;
+  width: clamp(16rem, 100%, 30rem);
+  overflow: hidden;
+}
+.audio-player audio {
+  width: 100%
+}
+.audio-player__inner {
+  flex: 1
+}
+.audio-player img {
+  transform: translateY(0.5ex)
+}
+.cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(1.375rem, 1.2rem + 0.89vw, 2rem);
+  justify-content: flex-start;
+  align-items: center
+}
+.gap-top-size-2 {
+  margin-top: clamp(2.375rem, 1.98rem + 1.96vw, 3.75rem)
+}
+.flow>*+* {
+  margin-top: 1rem
+}
+.audio-player__title {font-size: clamp(1.25rem, 1.11rem + 0.71vw, 1.75rem)}
+.audio-player__subtitle {font-size: clamp(1rem, 0.96rem + 0.18vw, 1.125rem);}
+
+img {display: block; margin: 1.5rem auto; border-style: none; max-inline-size: 100%; block-size: auto; object-fit: cover;}
+
+/* ---------------------------- */
+.glow {
+  font-size: calc(2rem + 5vw);
+  font-weight: 100;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 1px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+/* ---------------------------- */
+.desc {
+  display: block;
+  max-width: calc(55rem / 2);
+  margin: auto;
+  font-size: 1.3rem;
+  background-image: linear-gradient(60deg, #020024 0%, #090979 65%, #00d4ff 100%);
+}
+.frame {
+  border: 1px solid #bbb6;
+  border-radius: .5rem;
+  margin-block: 1rem;
+  padding: .5rem 1rem;
+}
+</style>
+</head>
+
+<body>
+<h1 class="glow">Молодость</h1>
+<div class="desc frame">
+<p>Разбросало нас по жизни,</br>
+И у нас свои дела.</br>
+Разметало словно листья,</br>
+И летим мы кто куда.</br>
+Мы не видимся годами,</br>
+А кого то вовсе нет.</br>
+И только память временами,</br>
+В небе пишет нам привет.</p>
+</div>
+
+<div class="wrapper">
+<figure><div class="audio-player cluster frame">
+<img src="https://web-lite.github.io/images/muz.jpg" alt="" class="audio-player__thumbnail" loading="lazy" width="80" height="80"><div class="audio-player__inner flow"><div class="audio-player__title">Молодость</div><div class="audio-player__subtitle">группа Рождество</div>
+<audio src="https://web-lite.github.io/audio/rozhdestvo-molodost.mp3" class="audio-player__element" controls=""></audio></div></div></figure>
+
+<figure><div class="audio-player cluster frame">
+<img src="https://web-lite.github.io/images/song-for-you.jpg" alt="" class="audio-player__thumbnail" loading="lazy" width="80" height="80"><div class="audio-player__inner flow"><div class="audio-player__title">A song for V</div><div class="audio-player__subtitle">Dr. Project Point Blank</div>
+<audio src="https://web-lite.github.io/audio/Dr._Project_Point_Blank_-_A_song_for_V.mp3" class="audio-player__element" controls=""></audio></div></div></figure>
+</div>
+<div class="">
+<img src="https://web-lite.github.io/images/rozhdestvo.jpg" alt="" class="">
+</div>
+</div>
+
+
+
+</body>
+</html>
