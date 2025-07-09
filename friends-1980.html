@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" /> 
+  <link rel="icon" href="https://web-lite.github.io/favicon/favicon.ico" sizes="any">
+  <link rel="icon" href="https://web-lite.github.io/favicon/icon.png" type="image/png">
+
+<title>ТТЖТ и наши семьи</title>
+
+  <meta property="og:site_name" content="Друзья">
+  <meta property="og:title" content="ТТЖТ и наши семьи">
+  <meta property="og:type" content="gallery">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="https://i.postimg.cc/FKs48DyL/screen-600.jpg">
+  <meta property="og:description" content="Группа ТТЖТ 1980, фотографии друзей во во время учёбы и фотографии в наше время 2022-2025"/>
+
+<style>
+* {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 100%;
+}
+
+html {
+  block-size: 100%;
+  font-family: system-ui, sans-serif;
+  font-size: 100%;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  min-block-size: 100%;
+  line-height: 1.5;
+  font-family: system-ui, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  /* defaults to dark theme */
+  body {
+  --bg-color: #1c1b22;
+  --text-color: #f9f9f9;
+  --text-light: #adefd1;
+  --accent-bg: #2b2a33;
+  --accent-color: #0a84ff;
+  --time-bg-color:#001829;
+  --code-bg-color: #112e41;
+  --code-text-color: #f9f9f9;
+  --border: #b1b1b966;
+  --summary-bg: #0b4a55;
+  --ol-rounded-bg: #16424e;
+  --bg-success: #145322; /* зелёный */
+  --bg-info: #0c515c; /* синий */
+  --bg-warning: #e0a800; /* жёлтый */
+  --bg-danger: #c82333; /* красный */
+  --bg-caption: #133148;
+  }
+  body.light-theme {
+  --bg-color: #fbfbfe;
+  --text-color: #1c1b22;
+  --text-light: #585858;
+  --accent-bg: #ffffff;
+  --accent-color: #007aff;
+  --time-bg-color: #c7d3d4;
+  --code-bg-color: #c7d3d4;
+  --code-text-color: #000;
+  --border: #898EA4;
+  --summary-bg: #13eac9;
+  --ol-rounded-bg: #87ceeb;
+  --bg-success: #28a745; /* зелёный */
+  --bg-info: #17a2b8; /* синий */
+  --bg-warning: #ffc107; /* жёлтый */
+  --bg-danger: #dc3545; /* красный */
+  --bg-caption: #a5cbe7;
+  }
+}
+
+header {
+  grid-column: 1 / -1;
+  margin-block-end: 1rem;
+}
+
+header.img-bg {
+  background-image: url("https://i.postimg.cc/N0fTF25G/background-1600x200.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 5rem;
+}
+
+.header-text {
+  text-align: center;
+  margin-block-start: -.5rem;
+  color: #ffffff;
+}
+
+header, footer {
+  background: #223;
+  color: #ffffff;
+  block-size: 5rem;
+}
+
+footer {
+  position: sticky;
+  top:100%;
+}
+
+footer p {
+  text-align: center;
+  margin: 1rem;
+}
+
+h1 {
+  text-align: center;
+  padding: 1rem 0;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--text-light);
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: clamp(2rem, 1.1vw + 1.7rem, 3rem);
+}
+
+h2 {
+  font-size: clamp(1.8rem, 0.7vw + 1.6rem, 2.4rem);
+  margin-left: 5vw;
+}
+
+h3, .h3 {
+  font-size: clamp(1.6rem, 0.4vw + 1.5rem, 2rem);
+}
+
+h4, .h4 {
+  font-size: clamp(1.3rem, 0.6vw + 1.1rem, 1.8rem);
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+h2, h3, h4, h5, h6 {
+  margin-block: 2rem 1.5vw;
+  padding-inline: .5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--text-light);
+  text-wrap: balance;
+}
+
+h1,h2,h3,h4,h5,h6, p, a {
+  overflow-wrap: break-word;
+}
+
+p:not([class]) {
+  margin-block-end: 1rem;
+  padding-inline: .5rem;
+  font-weight: 300;
+  font-style: normal;
+  line-height: inherit;
+  background: inherit;
+  color: inherit;
+}
+
+div:not([class]) {
+  padding: .5rem;
+}
+
+:focus {scroll-margin-bottom: 8vh}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+  margin-block: 2rem;
+}
+
+hr {
+  border-block: 1px solid;
+  border-image-source: linear-gradient(to right, transparent, gray, transparent);
+  border-image-slice: 1;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+small {
+  font-size: 80%;
+  font-weight: 300;
+}
+
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+  object-fit: cover;
+}
+
+.btn-theme {
+  position: fixed;
+  top: 5rem;
+  right: 0;
+  width: min-content;
+  max-width: 2rem;
+  margin: 0 .5rem 0 0;
+  background: AccentColor;
+  border: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  overflow-wrap: anywhere;
+  z-index: calc(infinity);
+  box-sizing: border-box;
+}
+
+time, addres {
+  display: block;
+  font-size: .9rem;
+  font-weight: 300;
+  background: var(--time-bg-color);
+  color: var(--text-color);
+  padding: 2px;
+  width: fit-content;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+.first-paragraph {
+  width: fit-content;
+  max-width: 60vw
+  margin-inline: 3vw;
+  background-color: var(--accent-bg);
+  border: 1px solid var(--border);
+  border-radius: .5rem;
+  padding: 0 .5rem;
+  border-radius: 8px;
+}
+
+figure {
+  display: block;
+}
+
+figcaption {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+figcaption h3 {
+  background: #1e67e0;
+  color: #ffffff;
+  margin-block: 0;
+  margin-inline: 10px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+figcaption .num {
+  justify-content: start;
+  margin-inline: 10px;
+  padding-inline: .5rem;
+  background: #331199;
+  color: #ffffff;
+  width: fit-content;
+  border-radius: 5px;
+}
+
+figcaption .caption {
+  text-align: center;
+  margin-inline: 10px;
+  background: var(--bg-caption);
+  color: var(--text-color);
+  padding-inline: .5vw;
+}
+
+.box {
+  text-align: center;
+  max-width: 90vw;
+  margin: 2.5vw auto;
+}
+
+.box-item {
+  padding: 5px;
+  box-sizing: border-box;
+  display: inline;
+}
+
+@media (min-width: 500px) {
+  .box-item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .box-item {
+    width: 33.333%;
+  }
+}
+
+@media (min-width: 1700px) {
+  .box-item {
+    width: 25%;
+  }
+}
+
+@media (min-width: 2100px) {
+  .box-item {
+    width: 20%;
+  }
+}
+</style>
+</head>
+
+<body>
+<header class="img-bg">
+<h1 class="header-text">ТТЖТ и наши семьи</h1>
+</header>
+
+<time>Опубликовано: июль 2025</time>
+<hr>
+<!-- ********** Theme Toggle ********** -->
+<div class="btn-theme" role="button" aria-pressed="false" tabindex="0" title="Переключить тему">🔆 🌙</div>
+
+<div class="first-paragraph">
+<p>Страница адаптирована для компьютера и мобильных устройств</p>
+<p>— При клике на картинку, она увеличится.</p>
+</div>
+<br>
+<div class="first-paragraph">
+<audio src="https://web-lite.github.io/audio/rozhdestvo-molodost.mp3" class="" controls=""></audio>
+</div>
+
+<main>
+
+<h2>1980 — 2022 +</h2>
+
+<section class="box">
+<figure class="box-item">
+  <img src="https://i.postimg.cc/CMscBmGX/001-1980.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>ТТЖТ</h3>
+<p class="num">001</p>
+<p class="caption">Состав группы в 1980 г.</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/Gt6thkmQ/002-1980.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>ТТЖТ</h3>
+<p class="num">002</p>
+<p class="caption">1980 ..., Пётр Богданов, Александр Тихомиров</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/TPTww2fZ/003-1980.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>ТТЖТ</h3>
+<p class="num">003</p>
+<p class="caption">1980. Григорий Самохин, Артур Арустамян, Бахрам Садуллаев</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/0QB2cpDs/004-1980.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>ТТЖТ</h3>
+<p class="num">004</p>
+<p class="caption">1980 ..., Пётр Богданов, Виктор Анфёров</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/qMny6RHR/005-1980.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>ТТЖТ</h3>
+<p class="num">005</p>
+<p class="caption">1980 ..., Артур Арустамян, Юрий Арюткин</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/52gH8Q7x/006-1980.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>ТТЖТ</h3>
+<p class="num">006</p>
+<p class="caption">1980. Виктор Анфёров</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/Y9Ghcnp9/007-1980.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>ТТЖТ</h3>
+<p class="num">007</p>
+<p class="caption">1980</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/Hkz2jxbM/008-1980.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>ТТЖТ</h3>
+<p class="num">008</p>
+<p class="caption">1980</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/cHp7P8Gp/009-1980.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>ТТЖТ</h3>
+<p class="num">009</p>
+<p class="caption">1980</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/DwvQVTRw/010-1980.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>ТТЖТ</h3>
+<p class="num">010</p>
+<p class="caption">1980</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/L5hdQwRC/011-1980.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>ТТЖТ</h3>
+<p class="num">011</p>
+<p class="caption">1980</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/zfqcP6FC/012-1980.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>ТТЖТ</h3>
+<p class="num">012</p>
+<p class="caption">1980. Эмма Тиссен (Сорока)</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/tT3tQ4R7/013-1980.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>ТТЖТ</h3>
+<p class="num">013</p>
+<p class="caption">1980</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/nhNvXDCC/014-1980.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>ТТЖТ</h3>
+<p class="num">014</p>
+<p class="caption">1980</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/Yq9g83Fv/015-1980.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>ТТЖТ</h3>
+<p class="num">015</p>
+<p class="caption">1980</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/6QdGTbkm/016-1980.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>ТТЖТ</h3>
+<p class="num">016</p>
+<p class="caption">1980</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/prd9GWpw/017-1980.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>ТТЖТ</h3>
+<p class="num">017</p>
+<p class="caption">1980</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/sgWM00gg/018-1980.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>ТТЖТ</h3>
+<p class="num">018</p>
+<p class="caption">1980</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/Hnjx06NH/019-1980.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>ТТЖТ</h3>
+<p class="num">019</p>
+<p class="caption">1980</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src=https://i.postimg.cc/DfW4XZ3G/020-1980.jpg"" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>ТТЖТ</h3>
+<p class="num">020</p>
+<p class="caption">1980 Галина Еругина (Дементьева)</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/GhKB0skZ/021-1980.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>ТТЖТ</h3>
+<p class="num">021</p>
+<p class="caption">1980</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/wxVx3Y7N/022-1980.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>ТТЖТ</h3>
+<p class="num">022</p>
+<p class="caption">1980</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/jqZWm76B/023-1980.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>ТТЖТ</h3>
+<p class="num">023</p>
+<p class="caption">1980</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/prTdRsQ4/024-1980.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>ТТЖТ</h3>
+<p class="num">024</p>
+<p class="caption">1980</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/v8qB3dbs/025-1980.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>ТТЖТ</h3>
+<p class="num">025</p>
+<p class="caption">1980</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/sX0r9sSH/026-1980.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>ТТЖТ</h3>
+<p class="num">026</p>
+<p class="caption">1980. Юрий Арюткин</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/rwY3PQzz/027-1980.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>ТТЖТ</h3>
+<p class="num">027</p>
+<p class="caption">1980</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/W3c9BKVp/028-1980.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>ТТЖТ</h3>
+<p class="num">028</p>
+<p class="caption">1980. Юрий Арюткин</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/nV0k2MXh/029-1980.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>ТТЖТ</h3>
+<p class="num">029</p>
+<p class="caption">1980. Татьяна Попова (Пирожкова)</p>
+</figcaption>
+</figure>
+
+<!-- *** 2022 + ********************************* -->
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/1zQwsZ8d/030.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2022 +</h3>
+<p class="num">030</p>
+<p class="caption">Айше Сабирова (Муратова)</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/jjcwTn0W/031.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2022 +</h3>
+<p class="num">031</p>
+<p class="caption">Айше Сабирова (Муратова)</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/8zBsdfCy/032.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2022 +</h3>
+<p class="num">032</p>
+<p class="caption"></p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/hvTd7S3T/033.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2022 +</h3>
+<p class="num">033</p>
+<p class="caption">Александр Тихомиров, Юрий Арюткин</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/VL5NTsFR/034.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2022 +</h3>
+<p class="num">034</p>
+<p class="caption">Юрий Арюткин и Александр Тихомиров</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/7YpqW3hH/035.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2022 +</h3>
+<p class="num">035</p>
+<p class="caption">Галина Дементьева (Еругина)</p>
+<p class="caption">А у меня  тоже самое, как у всех,  замужем 43 года, два сына, старшему 42, младшему 35. У старшего 3 детей, два мальчика  и девочка. У младшего детей нет. Они живут в Екатеринбурге. А мы с мужем живём в Узбекистане а Алмалыке.</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/2ygNgYzc/036.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2022 +</h3>
+<p class="num">036</p>
+<p class="caption">Галина Деменьтьева с сыновьями.</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/FHyXCwwp/037.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2022 +</h3>
+<p class="num">037</p>
+<p class="caption">Григорий Самохин</p>
+<p class="caption">Добрый день всем, пишу за Григория так как не любитель телефонов. В 92 уехали Волгоградскую обл, живем в селе. У нас два сына, Андрей 40 лет и Сергей 37 лет, трое внуков у старшего сын 15 лет и дочь 12 лет, у младшего сын 3 года. Живем вдвоём , но дети живут недалеко и часто бывают у нас. Всем привет от Григория.</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/XJDRyWyj/038.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2022 +</h3>
+<p class="num">038</p>
+<p class="caption">Юрий Арюткин</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/wxnBC8bY/039.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2022 +</h3>
+<p class="num">039</p>
+<p class="caption">Шарлотта на работе</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/zfDDCJ3K/040.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2022 +</h3>
+<p class="num">040</p>
+<p class="caption">Шарлотта с мужем</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/KjPCpMHz/041.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2022 +</h3>
+<p class="num">041</p>
+<p class="caption">Семья Шарлотты Ланг</p>
+<p class="caption">Ну что обо мне: я с семьёй в сентябре 1990 года пириехали в Германию в город  Дрезден, так тут и живём. У меня три сына, Александр, (в честь Саши Тихомирова) Альфред и Раймонд,  все имена имеют историю. Внуков 5. У старших сыновей по дочке и сыну, у младшего пока только девочка. Старшей внучке будет осенью 18 лет. С мужем прожили уже 46 лет. Всё потихоньку,  было бы не хуже. Всем детям и внукам желаю здоровья, успехов и пусть радуют вас.😘😘</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/bwN4LdHy/042.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2022 +</h3>
+<p class="num">042</p>
+<p class="caption"></p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/TYQ4yf8Z/043.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2022 +</h3>
+<p class="num">043</p>
+<p class="caption">Эмма Сорока (Тиссен)</p>
+<p class="caption">Привет друзья! Живу в Германии с 1997  года в г. Бургбернхайм. В прошлом году в июне месяце похоронила мужа. Прожили с ним  41 год. У меня двое детей  Юрий и Татьяна и 3 внука им 12, 10, 7 лет. Все мальчишки. Живу с дочерью в одном доме.</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/TYPc4bS4/044.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2022 +</h3>
+<p class="num">044</p>
+<p class="caption">Эмма Сорка</p>
+<p class="caption">Это мой сын с женой ему в июле  будет 42 года. Детей у них нет. Женат уже 10 лет</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/V6Rj7sFw/045.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2022 +</h3>
+<p class="num">045</p>
+<p class="caption">Эмма Сорка</p>
+<p class="caption">Это мая дочь ей 38</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/tT2x3SXC/046.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2022 +</h3>
+<p class="num">046</p>
+<p class="caption">Эмма Сорока</p>
+<p class="caption">Это мои внуки на отдыхе в Италии со своим папой.</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/PJCPmd32/047.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2022 +</h3>
+<p class="num">047</p>
+<p class="caption">Мила Янина</p>
+<p class="caption">Здравствуйте мои хорошие</p>
+<p class="caption">Итак уехала из Ташкента на Кубань с мужем и двумя детьми, старшая дочка и сын на 5 лет младше, потом дочка вышла замуж и у неё сын, мой внук, ему летом будет 23 года, мы с сыном уехали в Питер. Сейчас я одна, сын с женой живут недалеко, дочка в Крыму</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/Xq5BRVfX/048.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2022 +</h3>
+<p class="num">048</p>
+<p class="caption">Мила Янина</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/MpqfLJvK/049.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2022 +</h3>
+<p class="num">049</p>
+<p class="caption">Мила Янина</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/8Cq1qLtB/050.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2022 +</h3>
+<p class="num">050</p>
+<p class="caption">Мила Янина</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/QMWDkHhB/051.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2022 +</h3>
+<p class="num">051</p>
+<p class="caption">Мила Янина</p>
+<p class="caption">Я с внуком</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/4yXTgPtt/052.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2022 +</h3>
+<p class="num">052</p>
+<p class="caption">Мила Янина</p>
+<p class="caption">Сын с женой, детей пока нет.</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src=https://i.postimg.cc/RVsxkc06/053.jpg"" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2022 +</h3>
+<p class="num">053</p>
+<p class="caption">Олег Колтырчин</p>
+<p class="caption">Привет всем))) После службы сразу уехал в Краснодарский Край, есть такой город Армавир. Женился и уже 41 год , сыну 39  живет в Москве (есть грех маленький, сын на стороне, ему 5, помогаю). Внуков нет, пока))). Мотался по стройкам переквалифицировался в инженера/строителя. Работал в Сочи перед олимпиадой, на Кольской АЭС, в Питере, в Москве, в Новом Уренгое, вообщем повидал Россию. Последние 10 лет работаю в скорой помощи… Жена сказала хватит мотаться по стройкам ))) как- то так</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/W4rRqCwg/054.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2022 +</h3>
+<p class="num">054</p>
+<p class="caption">Олег Колтырчин</p>
+<p class="caption"></p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/4yfjMdkQ/055-1.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2022 +</h3>
+<p class="num">055</p>
+<p class="caption">Олег Колтырчин</p>
+<p class="caption">Старший сегодня на зеленом марафоне в Москве</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/L8cwSvFX/056-2.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2022 +</h3>
+<p class="num">056</p>
+<p class="caption">Олег Колтырчин</p>
+<p class="caption">Старший сегодня на зеленом марафоне в Москве</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/bwtVmbSj/056.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2022 +</h3>
+<p class="num">056</p>
+<p class="caption">..., Александр Тихомиров, Юрий Арюткин</p>
+<p class="caption"></p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/28vXwhZN/057.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2022 +</h3>
+<p class="num">057</p>
+<p class="caption">Пётр Богданов</p>
+<p class="caption">Привет вам, поедателям одной каши науки и культуры образования в области РС и РВ 📻 📺 📟</p>
+<p class="caption">Рад за вас, т.е. за нас за всех! Жизнь нас раскидала, но не разделила! ...     духом мы остались прежними и готовы на подвиги ... ну или на свершения задуманного нашими внуками .......</p>
+<p class="caption">Мы всегда готовы им помочь, нравоучить или дать совет 👍, мы же из страны Советов</p>
+<p class="caption">А у меня есть дочь в Ташкенте, уже взрослая. В 93г. из Ташкента с новой семьёй переехали на север в Нягань и до сих пор пока здесь. Сын 36 лет, сейчас живёт в Техасе, внуков пока нет....</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/sxWKTC14/058.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2022 +</h3>
+<p class="num">059</p>
+<p class="caption">Пётр Богданов</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/FHppWZF8/059.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2022 +</h3>
+<p class="num">060</p>
+<p class="caption">Пётр Богданов</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/Xq9cwKD2/060.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2022 +</h3>
+<p class="num">061</p>
+<p class="caption">Пётр Богданов</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/pLWYFFQZ/061.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2022 +</h3>
+<p class="num">062</p>
+<p class="caption">Пётр Богданов</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/N0L6Nvz2/062.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2022 +</h3>
+<p class="num">062</p>
+<p class="caption">Пётр Богданов</p>
+<p class="caption">Сын Антон с супругой в Нью-Йорке, по пути в Техас...</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/ry5SZJQj/063.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2022 +</h3>
+<p class="num">064</p>
+<p class="caption">Пётр Богданов</p>
+<p class="caption">А вот они в день свадьбы в Москве, апрель 22г.</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/bwVbSFwy/063.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2022 +</h3>
+<p class="num">063</p>
+<p class="caption">Алексанрд Тихомиров</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/RC1HL0Zb/064.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2022 +</h3>
+<p class="num">064</p>
+<p class="caption">Алексанрд Тихомиров</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/Pq8LpX7y/065.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2022 +</h3>
+<p class="num">065</p>
+<p class="caption">Татьяна Пирожкова (Попова)</p>
+<p class="caption">Приветствую всех. Немного о себе. Замужем уже 42 года. доченьке через месяц 40, сын на год младше. Живу в Ташкенте  на юнусабаде. У дочки две дочки, у сына одна дочка. Старшая два года назад закончила школу с золотой медалью, учится в университете BMU в Ташкенте. Средняя закачивает 11 класс. Младшая закончила 2-ой класс. Сын с семьёй живёт в Подмосковье.</p>
+<p class="caption">Старшие внучки закончили школу с немецким языком. В прошлом году средняя внучка ездила в Белоруссию, а в этом году в Штутгарт.</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/Vk2v8yNC/066.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2022 +</h3>
+<p class="num">066</p>
+<p class="caption">Татьяна Пирожкова, Артур Арустамян, Айше Сабирова, Александр Тихомиров</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/T2QPP5wG/067.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2022 +</h3>
+<p class="num">067</p>
+<p class="caption">Дочь Татьяны Пирожковой со своеей дочкой</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/gJsGr1G4/068.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2024</h3>
+<p class="num">068</p>
+<p class="caption">Виктор Анфёров</p>
+<p class="caption">Виктор Анфёров со старшим сыном Никитой</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/zGh5TyJy/069.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2023</h3>
+<p class="num">069</p>
+<p class="caption">Виктор Анфёров</p>
+<p class="caption">Младший сын Андрей</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/LXxMmfVb/070.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2025</h3>
+<p class="num">070</p>
+<p class="caption">Виктор Анфёров</p>
+<p class="caption">Младший сын Андрей</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/sDkCf3ps/071.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2025</h3>
+<p class="num">071</p>
+<p class="caption">Виктор Анфёров</p>
+<p class="caption">Младший сын Андрей, набережная Воронежа</p>
+<p class="caption">«Гото Предестинация» — первый линейный корабль Российского военно-морского флота. Судно было заложено 19 (29) ноября 1698 года на верфи Воронежа.</p>
+<p class="caption">Название корабля переводится как «Божье предвидение». Воронежское судно — это копия линкора петровских времён, выстроенная в 2011–2014 годах и пришвартованная на Адмиралтейской площади.</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/rs73p9RQ/072.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2025</h3>
+<p class="num">072</p>
+<p class="caption">Виктор Анфёров</p>
+<p class="caption">Младший сын Андрей на набережной реки Воронеж</p>
+</figcaption>
+</figure>
+
+<figure class="box-item">
+  <img src="https://i.postimg.cc/jCV3TdB1/073.jpg" loading="lazy" data-background="rgba(23, 29, 54, .8)">
+<figcaption>
+<h3>2022 +</h3>
+<p class="num">073</p>
+<p class="caption">Александр Ануркин с супругой</p>
+<p class="caption"></p>
+</figcaption>
+</figure>
+
+</section>
+</main>
+
+<footer>
+<hr>
+<p>Copyright © май-июль 2025 | Виктор</p>
+</footer>
+
+<!-- Theme Switcher -->
+  <script>
+const btn = document.querySelector(".btn-theme"),
+  prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)"),
+  currentTheme = localStorage.getItem("theme");
+"dark" == currentTheme ? document.body.classList.toggle("dark-theme") : "light" == currentTheme && document.body.classList.toggle("light-theme"),
+  btn.addEventListener("click", function () {
+  if (prefersDarkScheme.matches) {
+  document.body.classList.toggle("light-theme");
+  var e = document.body.classList.contains("light-theme") ? "light" : "dark";
+  } else {
+  document.body.classList.toggle("dark-theme");
+  e = document.body.classList.contains("dark-theme") ? "dark" : "light";
+  }
+  localStorage.setItem("theme", e);
+  });
+  </script>
+
+<!-- Masonry -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script>
+$(".box").imagesLoaded(function() {
+    $(".box").masonry({
+      itemSelector: ".box-item"
+    });
+  });
+</script>
+  
+<!-- Zoom -->
+  <script src='https://cdn.jsdelivr.net/gh/sparanoid/lightense-images@master/dist/lightense.min.js'></script>
+  <script>
+window.addEventListener('load', function () {
+  Lightense('img:not(.no-lightense),.lightense');
+}, false);
+  </script>
+
+<!-- Theme Switcher -->
+  <script>
+const btn = document.querySelector(".btn-theme"),
+  prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)"),
+  currentTheme = localStorage.getItem("theme");
+"dark" == currentTheme ? document.body.classList.toggle("dark-theme") : "light" == currentTheme && document.body.classList.toggle("light-theme"),
+  btn.addEventListener("click", function () {
+  if (prefersDarkScheme.matches) {
+  document.body.classList.toggle("light-theme");
+  var e = document.body.classList.contains("light-theme") ? "light" : "dark";
+  } else {
+  document.body.classList.toggle("dark-theme");
+  e = document.body.classList.contains("dark-theme") ? "dark" : "light";
+  }
+  localStorage.setItem("theme", e);
+  });
+  </script>
+
+</body>
+</html>
